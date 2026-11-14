@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS | BIM Intelligence</title>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">NEXUS <span>BIM INTELLIGENCE</span></div>
+      <div id="modelStatus">NO MODEL LOADED</div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar">
+        <h3>MODEL EXPLORER</h3>
+        <label class="upload">
+          OPEN IFC MODEL
+          <input id="ifcFile" type="file" accept=".ifc" />
+        </label>
+
+        <div id="progress">Waiting for IFC model...</div>
+
+        <h3>MODEL INFORMATION</h3>
+        <div id="modelInfo">No model loaded</div>
+
+        <h3>MODEL HIERARCHY</h3>
+        <h3>SELECTED ELEMENT PROPERTIES</h3>
+<pre id="elementProperties">Select an element in the 3D model.</pre>
+      </aside>
+
+      <section class="viewer">
+        <div class="viewer-toolbar">
+          <span>3D MODEL VIEWER</span>
+          <button id="resetView">RESET VIEW</button>
+          <button id="downloadFrag" disabled>EXPORT FRAGMENTS</button>
+        </div>
+        <div id="container"></div>
+      </section>
+    </main>
+
+    <footer>NEXUS | ARCHITECT ARZATH</footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

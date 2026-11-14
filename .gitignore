@@ -426,3 +426,35 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# NEXUS specific exclusions
+
+# Generated web build
+**/dist/
+
+# BIM models
+*.ifc
+*.frag
+*.rvt
+*.rfa
+*.rte
+*.rft
+
+# Backup files
+*.bak
+*.bak.*
+*.tmp
+*_v01_backup.*
+
+# Environment credentials
+.env
+.env.*
+!.env.example
+
+# Dependencies
+**/node_modules/
+
+# Local IDE files
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,144 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101820;
+  color: #e9eef3;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 65px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #17232e;
+  border-bottom: 1px solid #344454;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.brand span {
+  font-size: 10px;
+  color: #8ba4b9;
+  margin-left: 12px;
+}
+
+#modelStatus {
+  color: #7ed7ad;
+  font-size: 12px;
+}
+
+.workspace {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 290px;
+  padding: 22px;
+  background: #17232e;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  font-size: 12px;
+  color: #8ba4b9;
+  margin: 20px 0 14px;
+  letter-spacing: 1px;
+}
+
+.upload, button {
+  display: inline-block;
+  padding: 12px;
+  background: #2563a6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.upload input {
+  display: none;
+}
+
+#progress, #modelInfo, #hierarchy {
+  font-size: 12px;
+  color: #b8c7d5;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.viewer {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewer-toolbar {
+  height: 48px;
+  padding: 8px 15px;
+  background: #202f3c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.viewer-toolbar span {
+  margin-right: auto;
+}
+
+#container {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: #dce4eb;
+}
+
+#container canvas {
+  display: block;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+footer {
+  height: 30px;
+  padding: 8px 20px;
+  background: #17232e;
+  font-size: 9px;
+  color: #8ba4b9;
+}
+#elementProperties {
+  font-size: 11px;
+  color: #7ed7ad;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 350px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+/* Remove That Open Company watermark */
+[data-thatopen-logo] {
+    display: none !important;
+}
